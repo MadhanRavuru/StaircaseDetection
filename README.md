@@ -2,7 +2,7 @@
 
 Detecting single class (stairs) using YOLO Object detection framework. The project uses yolov3 for staircase detection
 
-In the *data/StaircaseDetection* folder, we have the training images along with annotated labels generated using *bbox.py*. As the dataset size is small, we have augmented the images. Even after augmentation, training set has around only 250 images.
+High quaity architectural images from Cubicasa5k[https://zenodo.org/record/2613548#.XtDCHMYzZuQ] dataset is considered for training. In the *data/StaircaseDetection* folder, we have the training images along with annotated labels generated using *bbox.py*. As the dataset size is small, we have augmented the images. Even after augmentation, training set has around only 250 images.
 
 The initial weights for model are from coco dataset with 80 classes.
 
