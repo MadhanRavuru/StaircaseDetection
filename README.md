@@ -1,4 +1,9 @@
-# Training YOLO with Custom Dataset in PyTorch
+# YOLO with Custom Dataset in PyTorch
+
+This article shows how to train on custom dataset
+https://towardsdatascience.com/training-yolo-for-object-detection-in-pytorch-with-your-custom-dataset-the-simple-way-1aa6f56cf7d9
+
+# Training for Staircase Detection in floor plans
 
 Detecting single class (stairs) using YOLO Object detection framework. The project uses yolov3 for staircase detection
 
