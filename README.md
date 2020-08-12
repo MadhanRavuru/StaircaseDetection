@@ -28,4 +28,4 @@ We can merge the splitted images with detections to form full image. Now, we hav
 # Stacking floors based on detections
 
 The testing image was diagonally shifted up and down and detections were performed in similar procedure.
-Idea is to stack different testing images(original and diagonally shifted) based on detections.
+Idea is to stack different testing images(original and diagonally shifted) based on maximum overlap in detections.
