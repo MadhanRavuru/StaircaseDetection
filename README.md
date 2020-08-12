@@ -15,13 +15,17 @@ The initial weights for model are the weights from coco dataset with 80 classes.
 
 Train using the *Train.ipynb* notebook to get weights for our model. *checkpoints* folder will be created with weights stored for certain epochs. Place them in *config* folder with name *yolov3.weights*.
 
-# Object detection - Testing
-
-Place the test image in *image* folder and run *PyTorch_Object_Detection.ipynb* notebook. we get the image with bounding boxes.
-
 **Observation**
 When the input image has stairs which are identifiable(reasonable staircase size compared to image), we get good stair-case detection.
 The model cannot detect very small stairs in a bigger building plan image. We can crop the bigger image to get images with stairs of reasonable size to perform detection.
 
-As you can see, *future.jpg* inside the images folder, has no good stair detection.
-But the cropped versions of it, for ex, *future2.jpg* and *future3.jpg* have good stair detection.
+# Object detection - Testing
+We split the testing image into equal parts, as testing for whole image gave bad results for stair detection.
+Use splitted images from *images/split* and run *PyTorch_Object_Detection.ipynb* notebook. we get the image with bounding boxes.
+
+We can merge the splitted images with detections to form full image. Now, we have detections for the full image.
+
+# Stacking floors based on detections
+
+The testing image was diagonally shifted up and down and detections were performed in similar procedure.
+Idea is to stack different testing images(original and diagonally shifted) based on detections.
