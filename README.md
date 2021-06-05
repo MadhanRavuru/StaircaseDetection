@@ -31,3 +31,9 @@ We can merge the splitted images with detections to form full image. Now, we hav
 
 The testing image was diagonally shifted up and down and detections were performed in similar procedure.
 Idea is to stack different testing images(original and diagonally shifted) based on maximum overlap in detections.
+
+
+# YOLO with Custom Dataset in PyTorch
+
+This article shows how to train on custom dataset
+https://towardsdatascience.com/training-yolo-for-object-detection-in-pytorch-with-your-custom-dataset-the-simple-way-1aa6f56cf7d9
