@@ -5,11 +5,11 @@ This project detects staircases in floor plan images using YOLO(You Only Look On
 
 Detecting single class (stairs) using YOLO Object detection framework. The project uses yolov3 for staircase detection
 
-High quaity architectural images from [Cubicasa5k](https://zenodo.org/record/2613548#.XtDCHMYzZuQ) dataset is considered for training. However, many images do not contain stairs in them. I handpicked some images with stairs for training. Further challenging images were selected by googling to generate more robust model for challenging plans.
+High quaity architectural images from [Cubicasa5k](https://zenodo.org/record/2613548#.XtDCHMYzZuQ) dataset is considered for training. However, many images do not contain stairs in them. I handpicked some images with stairs for training. Further challenging images were selected from web to generate more robust model for challenging plans.
 
 In the *data/StaircaseDetection* folder, we have the training images along with annotated labels generated using *bbox.py*. As the dataset size is small, we have augmented the images. Even after augmentation, training set has around only 250 images.
 
-The initial weights for model are the weights from coco dataset with 80 classes.
+The initial weights for model are the weights from coco dataset with 80 classes. Model was pre-trained on coco dataset.
 
 Train using the *Train.ipynb* notebook to get weights for our model. *checkpoints* folder will be created with weights stored for certain epochs. Place them in *config* folder with name *yolov3.weights*.
 
