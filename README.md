@@ -1,7 +1,5 @@
-# YOLO with Custom Dataset in PyTorch
-
-This article shows how to train on custom dataset
-https://towardsdatascience.com/training-yolo-for-object-detection-in-pytorch-with-your-custom-dataset-the-simple-way-1aa6f56cf7d9
+# Staircase Detection
+This project detects staircases in floor plan images using YOLO(You Only Look Once).
 
 # Training for Staircase Detection in floor plans
 
@@ -22,6 +20,10 @@ The model cannot detect very small stairs in a bigger building plan image. We ca
 # Object detection - Testing
 We split the testing image into equal parts, as testing for whole image gave bad results for stair detection.
 Use splitted images from *images/split* and run *PyTorch_Object_Detection.ipynb* notebook. we get the image with bounding boxes.
+
+Below is the test image of splitted floor plan with staircase detections
+
+<img src="images/future3-det.jpg">
 
 We can merge the splitted images with detections to form full image. Now, we have detections for the full image.
 
