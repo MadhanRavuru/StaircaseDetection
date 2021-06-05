@@ -25,7 +25,9 @@ Below is the test image of splitted floor plan with staircase detections
 
 <img src="images/future3-det.jpg">
 
-We can merge the splitted images with detections to form full image. Now, we have detections for the full image.
+We can see that there are some objects which look like stairs, but the model performed well in not getting confused by such objects.
+
+Later, we can merge these splitted images with detections to form full image. Now, we have detections for the full image.
 
 # Stacking floors based on detections
 
